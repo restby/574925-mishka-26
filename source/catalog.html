@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body class="page__body">
+    <header class="page__header page-header">
+      <a class="page-header__logo">
+        <img class="page-header__img" src="#" width="86" height="35" alt="магазин товаров ручной работы Мишка.">
+      </a>
+      <nav class="page-header__navigation navigation">
+        <button class="navigation__togle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="order.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="navigation__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__main-content catalog">
+      <div class="catalog__heading">
+        <h1 class="catalog__heading-title">Каталог товаров</h1>
+      </div>
+
+    </main>
+    <footer class="page__footer page-footer">
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">youtube.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">телеграмм.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <h2 class="copyright__title">Разработано</h2>
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden"></span>
+        </a>
+      </section>
+    </footer>
+    <div class="modal cart">
+      <div class="cart__container">
+        <h2 class="cart__title">Добавить в корзину</h2>
+        <form class="cart__form cart-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset class="cart-form__group">
+            <legend class="cart-form__subtitle">Выберите размер:</legend>
+            <p class="cart-form__wrapper">
+              <label class="cart-form__label" for="size-s">
+                <span class="cart-form__name">S</span>
+                <input class="cart-form__input" id="size-s" type="radio" name="size" value="S">
+              </label>
+              <label class="cart-form__label" for="size-m">
+                <span class="cart-form__name">M</span>
+                <input class="cart-form__input" id="size-m" type="radio" name="size" value="M">
+              </label>
+              <label class="cart-form__label" for="size-l">
+                <span class="cart-form__name">L</span>
+                <input class="cart-form__input" id="size-l" type="radio" name="size" value="L">
+              </label>
+            </p>
+          </fieldset>
+          <button class="cart-form__btn interactive" type="sumbit">Добавить</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>
