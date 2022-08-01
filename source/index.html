@@ -61,7 +61,7 @@
           <dd class="action__detail-name">Высота:</dd>
           <dt class="action__detail-value">15 см</dt>
         </dl>
-        <img class="action__img" src="#" alt="Вязаные корзинки.">
+        <img class="action__img" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Вязаные корзинки.">
         <b class="action__price">Цена: <span class="action__count">990 руб.</span></b>
         <button class="action__btn interactive" type="button">ЗАКАЗАТЬ</button>
       </section>
@@ -115,6 +115,22 @@
         </div>
         <a class="reviews__link interactive" href="#">Написать</a>
       </section>
+      <section class="contacts">
+        <h2 class="contacts__title"></h2>
+        <dl class="contacts__detail-list">
+          <dd class="contacts__detail-name">e-mail:</dd>
+          <dt class="contacts__detail-value"><a class="contacts__detail-email"
+              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dt>
+          <dd class="contacts__detail-name">адрес:</dd>
+          <dt class="contacts__detail-value">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8,
+            офис 101</dt>
+        </dl>
+        <div class="contacts__inner map">
+          <img class="contacts__img" width="320" height="454" src="img/map-mobile@1x 1.png" alt="г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8,
+        офис 101.">
+        </div>
+        <button class="contacts__btn interactive" type="button">НАпишите нам</button>
+      </section>
     </main>
     <footer class="page__footer page-footer">
       <section class="page-footer__social social">
@@ -144,6 +160,31 @@
         </a>
       </section>
     </footer>
+    <div class="modal cart">
+      <div class="cart__container">
+        <h2 class="cart__title">Добавить в корзину</h2>
+        <form class="cart__form cart-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset class="cart-form__group">
+            <legend class="cart-form__subtitle">Выберите размер:</legend>
+            <p class="cart-form__wrapper">
+              <label class="cart-form__label" for="size-s">
+                <span class="cart-form__name">S</span>
+                <input class="cart-form__input" id="size-s" type="radio" name="size" value="S">
+              </label>
+              <label class="cart-form__label" for="size-m">
+                <span class="cart-form__name">M</span>
+                <input class="cart-form__input" id="size-m" type="radio" name="size" value="M">
+              </label>
+              <label class="cart-form__label" for="size-l">
+                <span class="cart-form__name">L</span>
+                <input class="cart-form__input" id="size-l" type="radio" name="size" value="L">
+              </label>
+            </p>
+          </fieldset>
+          <button class="cart-form__btn interactive" type="sumbit">Добавить</button>
+        </form>
+      </div>
+    </div>
 
   </body>
 
