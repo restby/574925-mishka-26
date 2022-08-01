@@ -47,43 +47,58 @@
             <legend class="order-form__group-title">ТИП</legend>
             <label class="order-form__label" for="interior-accessory">
               <span class="order-form__name">Аксессуар для интерьера</span>
-              <input class="order-form__input" id="interior-accessory" type="radio" name="type"
+              <input class="order-form__input-radio" id="interior-accessory" type="radio" name="type"
                 value="interior-accessory">
             </label>
             <label class="order-form__label" for="childrens-toy">
               <span class="order-form__name">Детская игрушка</span>
-              <input class="order-form__input" id="childrens-toy" type="radio" name="type" value="childrens-toy">
+              <input class="order-form__input-radio" id="childrens-toy" type="radio" name="type" value="childrens-toy">
             </label>
           </fieldset>
           <fieldset class="order-form__group order-form__group--color">
             <legend class="order-form__group-title">ЦВет</legend>
             <label class="order-form__label" for="white">
               <span class="order-form__name">Белый</span>
-              <input class="order-form__input" id="white" type="checkbox" name="white" checked>
+              <input class="order-form__input-checkbox" id="white" type="checkbox" name="white" checked>
             </label>
             <label class="order-form__label" for="grey">
               <span class="order-form__name">Серый</span>
-              <input class="order-form__input" id="grey" type="checkbox" name="grey" checked>
+              <input class="order-form__input-checkbox" id="grey" type="checkbox" name="grey" checked>
             </label>
             <label class="order-form__label" for="tiffany">
               <span class="order-form__name">Тиффани</span>
-              <input class="order-form__input" id="tiffany" type="checkbox" name="tiffany">
+              <input class="order-form__input-checkbox" id="tiffany" type="checkbox" name="tiffany">
             </label>
             <label class="order-form__label" for="black">
               <span class="order-form__name">Черный</span>
-              <input class="order-form__input" id="black" type="checkbox" name="black">
+              <input class="order-form__input-checkbox" id="black" type="checkbox" name="black">
             </label>
             <label class="order-form__label" for="pink">
               <span class="order-form__name">Розовый</span>
-              <input class="order-form__input" id="pink" type="checkbox" name="pink">
+              <input class="order-form__input-checkbox" id="pink" type="checkbox" name="pink">
             </label>
             <label class="order-form__label" for="orange">
               <span class="order-form__name">Оранжевый</span>
-              <input class="order-form__input" id="orange" type="checkbox" name="orange">
+              <input class="order-form__input-checkbox" id="orange" type="checkbox" name="orange">
             </label>
           </fieldset>
           <fieldset class="order-form__group order-form__group--full-name">
             <legend class="order-form__group-title">ФИО</legend>
+            <p class="order-form__inner">
+              <label class="order-form__label" for="first-name">Имя:</label>
+              <input class="order-form__input order-form__input--first-name" id="first-name" name="first-name"
+                placeholder="Введите ваше имя*" type="text">
+            </p>
+            <p class="order-form__inner">
+              <label class="order-form__label" for="last-name">Фамилия:</label>
+              <input class="order-form__input order-form__input--last-name" id="last-name" name="last-name"
+                placeholder="Укажите фамилию*" type="text">
+            </p>
+            <p class="order-form__inner">
+              <label class="order-form__label" for="middle-name">Отчество:</label>
+              <input class="order-form__input order-form__input--middle-name" id="middle-name" name="middle-name"
+                placeholder="Отчество, если желаете" type="text">
+            </p>
           </fieldset>
           <fieldset class="order-form__group order-form__group--phone">
             <legend class="order-form__group-title">тел</legend>
