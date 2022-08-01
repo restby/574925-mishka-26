@@ -17,10 +17,10 @@
         </button>
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="order.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="navigation__list user-list">
@@ -41,7 +41,7 @@
         <h2 class="visually-hidden">Популярные товары.</h2>
         <ul class="popular__list">
           <li class="popular__item">
-            <a class="popular__link" href="#">Предметы интерьера</a>
+            <a class="popular__link popular__link--current" href="#">Предметы интерьера</a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">Детские игрушки</a>
@@ -51,7 +51,8 @@
       <section class="action">
         <h2 class="action__title">Вязаные корзинки</h2>
         <b class="action__subtitle">ТОВАР НЕДЕЛИ</b>
-        <p class="action__descr">ТОВАР НЕДЕЛИ</p>
+        <p class="action__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+        </p>
         <dl class="action__detail-list">
           <dd class="action__detail-name">Цвет:</dd>
           <dt class="action__detail-value">тиффани/серый</dt>
@@ -62,21 +63,21 @@
         </dl>
         <img class="action__img" src="#" alt="Вязаные корзинки.">
         <b class="action__price">Цена: <span class="action__count">990 руб.</span></b>
-        <button class="action__btn intaractive" type="button">ЗАКАЗАТЬ</button>
+        <button class="action__btn interactive" type="button">ЗАКАЗАТЬ</button>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item">Экологически чистые материалы</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--materials">Экологически чистые материалы</li>
+          <li class="about__item about__item--style">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--manufacture">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--package">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="reviews slider">
-        <h2 class="reviews__title"></h2>
+        <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <figure class="reviews__quote user-quote">
@@ -106,6 +107,13 @@
             </figure>
           </li>
         </ul>
+        <div class="slider__inner">
+          <button class="slider__btn slider__btn--prev" type="button"><span class="visually-hidden">предыдущий
+              слайд.</span></button>
+          <button class="slider__btn slider__btn--next" type="button"><span class="visually-hidden">следующий
+              слайд.</span></button>
+        </div>
+        <a class="reviews__link interactive" href="#">Написать</a>
       </section>
     </main>
     <footer class="page__footer page-footer">
