@@ -48,7 +48,7 @@
             <label class="order-form__label" for="interior-accessory">
               <span class="order-form__name">Аксессуар для интерьера</span>
               <input class="order-form__input-radio" id="interior-accessory" type="radio" name="type"
-                value="interior-accessory">
+                value="interior-accessory" checked>
             </label>
             <label class="order-form__label" for="childrens-toy">
               <span class="order-form__name">Детская игрушка</span>
@@ -118,7 +118,14 @@
           </fieldset>
           <fieldset class="order-form__group order-form__group--addition">
             <legend class="order-form__group-title">Доп</legend>
+            <p class="order-form__inner">
+              <label class="visually-hidden" for="message">контактный адрес электронной почты.</label>
+              <textarea class="order-form__input order-form__input--message" id="message" name="message"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </p>
           </fieldset>
+          <small class="order-form__note">*Поля обязательны для заполнения</small>
+          <button class="order-form__btn interactive" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
         </form>
       </section>
     </main>
