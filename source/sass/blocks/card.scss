@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__item-link {
+  text-decoration: none;
+
+  &--title {
+    order: 2;
+  }
+
+  &--img {
+    order: 1;
+  }
+}
+
+.card__item-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 17px;
+  color: $dark-color;
+  // color: #000000;
+}
+
+.card__item-img {
+  margin-bottom: 28px;
+}
+
+.card__item-details {
+  order: 3;
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.card__item-inner {
+  order: 4;
+  padding-top: 22px;
+  padding-bottom: 27px;
+}
+
+.card__item-price {
+  color: #000000;
+}
+
+.card__item-count {}
+
+.card__item-btn {}

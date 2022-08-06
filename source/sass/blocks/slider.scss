@@ -1,0 +1,24 @@
+.slider {}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__item {}
+
+.slider__inner {
+  display: flex;
+}
+
+.slider__btn {
+  width: 50%;
+  border: 1px solid #ececec;
+}
+
+.slider__btn--prev {}
+
+.slider__btn--next {
+  border-left: none;
+}
