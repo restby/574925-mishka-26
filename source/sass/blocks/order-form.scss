@@ -1,21 +1,21 @@
-.order-form {}
+// .order-form {}
 
 .order-form__group {
   margin: 0;
   padding: 0;
   border: none;
 
-  &--type {}
+  // &--type {}
 
-  &--color {}
+  // &--color {}
 
-  &--full-name {}
+  // &--full-name {}
 
-  &--phone {}
+  // &--phone {}
 
-  &--email {}
+  // &--email {}
 
-  &--addition {}
+  // &--addition {}
 }
 
 .order-form__group-title {
@@ -40,11 +40,11 @@
   color: $font-color-dark;
 }
 
-.order-form__input-radio {}
+// .order-form__input-radio {}
 
-.order-form__input-checkbox {}
+// .order-form__input-checkbox {}
 
-.order-form__inner {}
+// .order-form__inner {}
 
 .order-form__input-text {
   &::placeholder {
@@ -52,17 +52,17 @@
     color: rgba($font-color-dark, 0.5);
   }
 
-  &--first-name {}
+  // &--first-name {}
 
-  &--last-name {}
+  // &--last-name {}
 
-  &--middle-name {}
+  // &--middle-name {}
 
-  &--phone {}
+  // &--phone {}
 
-  &--email {}
+  // &--email {}
 
-  &--message {}
+  // &--message {}
 }
 
 .order-form__note {
