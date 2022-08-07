@@ -9,7 +9,7 @@
 
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__img" src="img/svg/mishka-logo-mobile.svg.svg" width="116" height="22"
           alt="магазин товаров ручной работы Мишка.">
       </a>
@@ -42,8 +42,7 @@
       <section class="order__inner">
         <h2 class="visually-hidden">Форма заказа.</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-          свяжемся с вами, чтобы уточнить
-          детали.</p>
+          свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="order-form__group order-form__group--type">
             <legend class="order-form__group-title">ТИП</legend>
@@ -88,25 +87,25 @@
             <legend class="order-form__group-title">ФИО</legend>
             <p class="order-form__inner">
               <label class="order-form__label" for="first-name">Имя:</label>
-              <input class="order-form__input order-form__input--first-name" id="first-name" name="first-name"
+              <input class="order-form__input-text order-form__input-text--first-name" id="first-name" name="first-name"
                 placeholder="Введите ваше имя*" type="text">
             </p>
             <p class="order-form__inner">
               <label class="order-form__label" for="last-name">Фамилия:</label>
-              <input class="order-form__input order-form__input--last-name" id="last-name" name="last-name"
+              <input class="order-form__input-text order-form__input-text--last-name" id="last-name" name="last-name"
                 placeholder="Укажите фамилию*" type="text">
             </p>
             <p class="order-form__inner">
               <label class="order-form__label" for="middle-name">Отчество:</label>
-              <input class="order-form__input order-form__input--middle-name" id="middle-name" name="middle-name"
-                placeholder="Отчество, если желаете" type="text">
+              <input class="order-form__input-text order-form__input-text--middle-name" id="middle-name"
+                name="middle-name" placeholder="Отчество, если желаете" type="text">
             </p>
           </fieldset>
           <fieldset class="order-form__group order-form__group--phone">
             <legend class="order-form__group-title">тел</legend>
             <p class="order-form__inner">
               <label class="visually-hidden" for="phone">контактный номер телефона.</label>
-              <input class="order-form__input order-form__input--phone" id="phone" name="phone"
+              <input class="order-form__input-text order-form__input-text--phone" id="phone" name="phone"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel">
             </p>
           </fieldset>
@@ -114,15 +113,15 @@
             <legend class="order-form__group-title">E-mail</legend>
             <p class="order-form__inner">
               <label class="visually-hidden" for="email">контактный адрес электронной почты.</label>
-              <input class="order-form__input order-form__input--email" id="email" name="email" placeholder="Ваш Email*"
-                type="email">
+              <input class="order-form__input-text order-form__input-text--email" id="email" name="email"
+                placeholder="Ваш Email*" type="email">
             </p>
           </fieldset>
           <fieldset class="order-form__group order-form__group--addition">
             <legend class="order-form__group-title">Доп</legend>
             <p class="order-form__inner">
               <label class="visually-hidden" for="message">контактный адрес электронной почты.</label>
-              <textarea class="order-form__input order-form__input--message" id="message" name="message"
+              <textarea class="order-form__input-text order-form__input-text--message" id="message" name="message"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </fieldset>

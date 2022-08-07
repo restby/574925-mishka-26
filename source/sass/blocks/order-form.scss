@@ -1,0 +1,74 @@
+.order-form {}
+
+.order-form__group {
+  margin: 0;
+  padding: 0;
+
+  &--type {}
+
+  &--color {}
+
+  &--full-name {}
+
+  &--phone {}
+
+  &--email {}
+
+  &--addition {}
+}
+
+.order-form__group-title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $font-color-alternative;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $font-color-dark;
+}
+
+.order-form__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $font-color-dark;
+}
+
+.order-form__input-radio {}
+
+.order-form__input-checkbox {}
+
+.order-form__inner {}
+
+.order-form__input-text {
+  &::placeholder {
+    line-height: 18px;
+    color: rgba($font-color-dark, 0.5);
+  }
+
+  &--first-name {}
+
+  &--last-name {}
+
+  &--middle-name {}
+
+  &--phone {}
+
+  &--email {}
+
+  &--message {}
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-form__btn {
+  width: 290px;
+}

@@ -1,7 +1,7 @@
 .heading {
   padding-top: 73px;
   padding-bottom: 74px;
-  background-color: #f1f1f1;
+  background-color: $bg-color-light;
 
   &--index {
     background-image: url("../../img/hero-mobile@2x.png");
@@ -14,5 +14,5 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $font-color-dark;
 }

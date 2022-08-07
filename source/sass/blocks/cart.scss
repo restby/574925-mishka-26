@@ -1,0 +1,44 @@
+.cart {}
+
+.cart__container {}
+
+.cart__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $font-color-dark;
+  text-transform: uppercase;
+}
+
+.cart__form {}
+
+.cart-form {}
+
+.cart-form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-form__group-title {
+  line-height: 30px;
+}
+
+.cart-form__inner {}
+
+.cart-form__label {}
+
+.cart-form__name {
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.cart-form__input {}
+
+.cart-form__btn {
+  width: 260px;
+  background-color: $bg-color-alternetive;
+  color: $font-color-light;
+  border: none;
+}

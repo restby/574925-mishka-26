@@ -1,9 +1,7 @@
 .popular {}
 
 .popular__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+  @include list-reset;
 }
 
 .popular__item {}
@@ -15,10 +13,10 @@
   font-weight: 700;
   font-size: 19px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #63d1bb;
+  color: $font-color-light;
+  background-color: $bg-color-alternetive;
 
-  &--current {
+  &--toys {
     background-color: #56c3b2;
   }
 }
