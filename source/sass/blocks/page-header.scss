@@ -1,1 +1,27 @@
-// .page-header {}
+.page-header {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+
+
+}
+
+.page-header__logo {
+  width: 116px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}

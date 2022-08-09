@@ -8,6 +8,12 @@
 
 .slider__inner {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .slider__btn {

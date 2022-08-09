@@ -1,22 +1,53 @@
-// .popular {}
+.popular {
+  .container {
+    width: 100%;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      padding: 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1150px;
+      padding: 0 50px;
+    }
+  }
+}
 
 .popular__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
-// .popular__item {}
+.popular__item {
+  background-color: $bg-color-alternetive;
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
 
 .popular__link {
   display: block;
+  width: 260px;
+  margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 31px;
   font-weight: 700;
   font-size: 19px;
   text-decoration: none;
   color: $font-color-light;
-  background-color: $bg-color-alternetive;
+}
 
-  &--toys {
-    background-color: #56c3b2;
-  }
+.popular__text {
+  display: inline-block;
+  width: 130px;
 }

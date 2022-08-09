@@ -9,6 +9,15 @@
 
 .about__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .about__item {
@@ -20,6 +29,46 @@
 
   &:first-child {
     padding-top: 54px;
+  }
+
+  &--materials {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--style {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--likes {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--handmade {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--manufacture {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--package {
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }
 
