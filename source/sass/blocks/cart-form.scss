@@ -1,0 +1,32 @@
+// .cart-form {}
+
+.cart-form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-form__group-title {
+  line-height: 30px;
+}
+
+// .cart-form__inner {}
+
+// .cart-form__label {}
+
+.cart-form__name {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.cart-form__input {
+  text-transform: uppercase;
+}
+
+.cart-form__btn {
+  width: 260px;
+  background-color: $bg-color-alternetive;
+  color: $font-color-light;
+  border: none;
+}

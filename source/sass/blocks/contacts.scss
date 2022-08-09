@@ -1,0 +1,32 @@
+.contacts {
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  margin-bottom: 28px;
+}
+
+.contacts__detail-list {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+// .contacts__detail-name {}
+
+// .contacts__detail-value {}
+
+.contacts__detail-email {
+  text-decoration: none;
+  color: $font-color-main;
+}
+
+// .contacts__inner {}
+
+.contacts__img {
+  margin-bottom: 42px;
+}
+
+.contacts__btn {
+  width: 260px;
+}

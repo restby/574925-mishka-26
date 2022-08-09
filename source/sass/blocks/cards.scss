@@ -1,0 +1,16 @@
+.cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cards__list {
+  @include list-reset;
+}
+
+.cards__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

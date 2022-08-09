@@ -1,0 +1,22 @@
+// .popular {}
+
+.popular__list {
+  @include list-reset;
+}
+
+// .popular__item {}
+
+.popular__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+  color: $font-color-light;
+  background-color: $bg-color-alternetive;
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}

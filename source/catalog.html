@@ -3,13 +3,15 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
 
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo">
-        <img class="page-header__img" src="#" width="86" height="35" alt="магазин товаров ручной работы Мишка.">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__img" src="img/svg/mishka-logo-mobile.svg.svg" width="116" height="22"
+          alt="магазин товаров ручной работы Мишка.">
       </a>
       <nav class="page-header__navigation navigation">
         <button class="navigation__togle" type="button">
@@ -35,53 +37,53 @@
     </header>
     <main class="page__main-content catalog">
       <header class="heading heading--catalog">
-        <h1 class="heading-title">Каталог товаров</h1>
+        <h1 class="heading__title">Каталог товаров</h1>
       </header>
-      <section class="catalog__cards cards">
+      <section class="cards">
         <h2 class="visually-hidden">Каталог продукции</h2>
         <ul class="cards__list">
           <li class="cards__item card">
-            <a class="card__item-link" href="#">
+            <a class="card__item-link card__item-link--title" href="#">
               <h3 class="card__item-title">Зайчик-попрыгайчик</h3>
             </a>
-            <a class="card__item-link" href="#">
+            <a class="card__item-link card__item-link--img" href="#">
               <img class="card__item-img" width="260" height="195" src="img/photo-1-mobile.jpg"
                 alt="Зайчик-попрыгайчик.">
             </a>
             <p class="card__item-details">Рост 30 см, вес 200 г</p>
             <div class="card__item-inner">
               <b class="card__item-price"><span class="card__item-count">1 200</span> руб.</b>
-              <button class="card__item-btn interactive" type="button"><span class="visually-hidden">добавить в
+              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
                   корзину.</span></button>
             </div>
           </li>
           <li class="cards__item card">
-            <a class="card__item-link" href="#">
+            <a class="card__item-link card__item-link--title" href="#">
               <h3 class="card__item-title">Корзинка для белья</h3>
             </a>
-            <a class="card__item-link" href="#">
+            <a class="card__item-link card__item-link--img" href="#">
               <img class="card__item-img" width="260" height="195" src="img/photo-2-mobile.jpg"
                 alt="Корзинка для белья.">
             </a>
             <p class="card__item-details">Диаметр 15 см, высота 10 см</p>
             <div class="card__item-inner">
               <b class="card__item-price"><span class="card__item-count">690</span> руб.</b>
-              <button class="card__item-btn interactive" type="button"><span class="visually-hidden">добавить в
+              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
                   корзину.</span></button>
             </div>
           </li>
           <li class="cards__item card">
-            <a class="card__item-link" href="#">
-              <h3 class="card__item-title">Большая корзинкадля игрушек</h3>
+            <a class="card__item-link card__item-link--title" href="#">
+              <h3 class="card__item-title">Большая корзинка для игрушек</h3>
             </a>
-            <a class="card__item-link" href="#">
+            <a class="card__item-link card__item-link--img" href="#">
               <img class="card__item-img" width="260" height="195" src="img/photo-3-mobile.jpg"
                 alt="Большая корзинкадля игрушек.">
             </a>
             <p class="card__item-details">Диаметр 30 см, высота 30 см</p>
             <div class="card__item-inner">
               <b class="card__item-price"><span class="card__item-count">1 500</span> руб.</b>
-              <button class="card__item-btn interactive" type="button"><span class="visually-hidden">добавить в
+              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
                   корзину.</span></button>
             </div>
           </li>
@@ -89,15 +91,18 @@
       </section>
       <section class="production">
         <h2 class="production__title">Процесс производства</h2>
-        <a class="production__link video" href="#">
-          <img class="production__img" width="260" height="150" src="img/video-mobile.jpg"
-            alt="стопкадр из видео с процессом производства вязаныз корзинок.">
-        </a>
-        <button class="production__btn" type="button"><span class="visually-hidden">открыть видео</span></button>
+        <div class="production__inner">
+          <a class="production__link video" href="#">
+            <img class="production__img" width="260" height="150" src="img/video-mobile.jpg"
+              alt="стопкадр из видео с процессом производства вязаныз корзинок.">
+          </a>
+          <button class="production__btn" type="button"><span class="visually-hidden">открыть видео</span></button>
+        </div>
+
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
+        <a class="production__link-order interactive" href="#">Сделать заказ</a>
       </section>
-      <a class="catalog__link interactive" href="#">СДелать заказ</a>
     </main>
     <footer class="page__footer page-footer">
       <section class="page-footer__social social">
@@ -135,16 +140,16 @@
             <legend class="cart-form__group-title">Выберите размер:</legend>
             <p class="cart-form__inner">
               <label class="cart-form__label" for="size-s">
-                <span class="cart-form__name">S</span>
-                <input class="cart-form__input" id="size-s" type="radio" name="size" value="S">
+                <span class="cart-form__name">s</span>
+                <input class="cart-form__input" id="size-s" type="radio" name="size" value="s">
               </label>
               <label class="cart-form__label" for="size-m">
-                <span class="cart-form__name">M</span>
-                <input class="cart-form__input" id="size-m" type="radio" name="size" value="M">
+                <span class="cart-form__name">m</span>
+                <input class="cart-form__input" id="size-m" type="radio" name="size" value="m">
               </label>
               <label class="cart-form__label" for="size-l">
-                <span class="cart-form__name">L</span>
-                <input class="cart-form__input" id="size-l" type="radio" name="size" value="L">
+                <span class="cart-form__name">l</span>
+                <input class="cart-form__input" id="size-l" type="radio" name="size" value="l">
               </label>
             </p>
           </fieldset>

@@ -1,0 +1,47 @@
+.action {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.action__title {
+  margin-bottom: 3px;
+}
+
+.action__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: $font-color-alternative;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.action__description {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.action__detail-list {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+// .action__detail-name {}
+
+// .action__detail-value {}
+
+.action__img {
+  margin-bottom: 25px;
+}
+
+.action__price {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.action__btn {
+  width: 260px;
+  text-transform: uppercase;
+}

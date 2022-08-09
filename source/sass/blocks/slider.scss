@@ -1,0 +1,22 @@
+// .slider {}
+
+.slider__list {
+  @include list-reset;
+}
+
+// .slider__item {}
+
+.slider__inner {
+  display: flex;
+}
+
+.slider__btn {
+  width: 50%;
+  border: 1px solid #ececec;
+}
+
+// .slider__btn--prev {}
+
+.slider__btn--next {
+  border-left: none;
+}
