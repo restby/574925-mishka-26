@@ -1,6 +1,12 @@
 .about {
   padding-top: 31px;
   padding-bottom: 58px;
+
+  .container {
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
+    }
+  }
 }
 
 .about__title {
@@ -13,10 +19,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
   }
 }
 

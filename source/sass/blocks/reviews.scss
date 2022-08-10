@@ -3,6 +3,10 @@
 
   .container {
     position: relative;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
+    }
   }
 
 }

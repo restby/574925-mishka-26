@@ -13,6 +13,7 @@
       grid-template-columns: 467px 1fr;
       grid-column-gap: 58px;
       position: relative;
+      padding-left: 225px;
     }
   }
 }
@@ -29,7 +30,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 61px;
-    left: 0;
+    left: -175px;
   }
 }
 
@@ -40,7 +41,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 207px;
-    padding-left: 175px;
   }
 }
 
@@ -99,10 +99,6 @@
 .action__inner {
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
   }
 }
 
