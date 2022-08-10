@@ -8,6 +8,7 @@
 
 .slider__inner {
   display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

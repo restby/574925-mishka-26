@@ -5,14 +5,22 @@
 
   &--index {
     background-image: url("../../img/hero-mobile@2x.png");
+    background-repeat: no-repeat;
   }
 }
 
 .heading__title {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: $font-color-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
