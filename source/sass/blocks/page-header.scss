@@ -4,11 +4,9 @@
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      flex-direction: row;
+      position: relative;
     }
   }
-
-
 }
 
 .page-header__logo {
@@ -18,10 +16,16 @@
   @media (min-width: $tablet-width) {
     width: 114px;
     height: 46px;
+    position: absolute;
+    top: 0;
+    left: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
+    position: absolute;
+    top: 0;
+    left: 50%;
   }
 }
