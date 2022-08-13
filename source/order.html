@@ -55,42 +55,42 @@
           <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="order-form__group order-form__group--type">
               <legend class="order-form__group-title">Тип</legend>
-              <label class="order-form__label" for="interior-accessory">
-                <span class="order-form__name">Аксессуар для интерьера</span>
+              <label class="order-form__label order-form__label--accessory" for="interior-accessory">
                 <input class="order-form__input-radio" id="interior-accessory" type="radio" name="type"
                   value="interior-accessory" checked>
+                <span class="order-form__name">Аксессуар для интерьера</span>
               </label>
-              <label class="order-form__label" for="childrens-toy">
-                <span class="order-form__name">Детская игрушка</span>
+              <label class="order-form__label order-form__label--toy" for="childrens-toy">
                 <input class="order-form__input-radio" id="childrens-toy" type="radio" name="type"
                   value="childrens-toy">
+                <span class="order-form__name">Детская игрушка</span>
               </label>
             </fieldset>
             <fieldset class="order-form__group order-form__group--color">
               <legend class="order-form__group-title">Цвет</legend>
               <label class="order-form__label" for="white">
-                <span class="order-form__name">Белый</span>
                 <input class="order-form__input-checkbox" id="white" type="checkbox" name="white" checked>
+                <span class="order-form__name">Белый</span>
               </label>
               <label class="order-form__label" for="grey">
-                <span class="order-form__name">Серый</span>
                 <input class="order-form__input-checkbox" id="grey" type="checkbox" name="grey" checked>
+                <span class="order-form__name">Серый</span>
               </label>
               <label class="order-form__label" for="tiffany">
-                <span class="order-form__name">Тиффани</span>
                 <input class="order-form__input-checkbox" id="tiffany" type="checkbox" name="tiffany">
+                <span class="order-form__name">Тиффани</span>
               </label>
               <label class="order-form__label" for="black">
-                <span class="order-form__name">Черный</span>
                 <input class="order-form__input-checkbox" id="black" type="checkbox" name="black">
+                <span class="order-form__name">Черный</span>
               </label>
               <label class="order-form__label" for="pink">
-                <span class="order-form__name">Розовый</span>
                 <input class="order-form__input-checkbox" id="pink" type="checkbox" name="pink">
+                <span class="order-form__name">Розовый</span>
               </label>
               <label class="order-form__label" for="orange">
-                <span class="order-form__name">Оранжевый</span>
                 <input class="order-form__input-checkbox" id="orange" type="checkbox" name="orange">
+                <span class="order-form__name">Оранжевый</span>
               </label>
             </fieldset>
             <fieldset class="order-form__group order-form__group--full-name">
@@ -135,8 +135,12 @@
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </p>
             </fieldset>
-            <small class="order-form__note">*Поля обязательны для заполнения</small>
-            <button class="order-form__btn interactive" type="submit">Отправить заказ</button>
+            <div class="order-form__wrapper">
+              <small class="order-form__note">*Поля обязательны для заполнения</small>
+              <button class="order-form__btn interactive" type="submit">Отправить заказ</button>
+            </div>
+
+
           </form>
         </section>
       </div>
