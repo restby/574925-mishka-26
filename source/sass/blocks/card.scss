@@ -1,6 +1,18 @@
 .card {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__item-link {
@@ -8,10 +20,18 @@
 
   &--title {
     order: 2;
+
+    @media (min-width: $tablet-width) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
   }
 
   &--img {
     order: 1;
+
+    @media (min-width: $tablet-width) {
+      grid-area: 1 / 1 / 4 / 2;
+    }
   }
 }
 
@@ -21,10 +41,15 @@
   font-weight: 700;
   font-size: 17px;
   color: $font-color-dark;
+
+
 }
 
 .card__item-img {
   margin-bottom: 28px;
+
+
+
 }
 
 .card__item-details {
@@ -33,12 +58,27 @@
   margin-bottom: 18px;
   font-size: 13px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 0;
+  }
 }
 
 .card__item-inner {
   order: 4;
   padding-top: 22px;
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3 / 2 / 4 / 3;
+    align-self: end;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+  }
 }
 
 .card__item-price {

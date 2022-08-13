@@ -19,22 +19,27 @@
           <button class="navigation__togle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list site-list">
+          <ul class="navigation__list navigation__list--site site-list">
             <li class="site-list__item">
-              <a class="site-list__link">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="order.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="navigation__list user-list">
-            <li class="user-list__item">
+          <ul class="navigation__list navigation__list--user user-list">
+            <li class="user-list__item user-list__item user-list__item--search">
               <a class="user-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-list__item">
+            <li class="user-list__item user-list__item user-list__item--cart">
               <a class="user-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <div class="navigation__group">
+            <a class="navigation__link" href="#">Новые поступления</a>
+            <a class="navigation__link" href="#">Распродажа</a>
+          </div>
+          <small class="navigation__note">Бесплатная доставка по России</small>
         </nav>
       </div>
     </header>
@@ -42,70 +47,72 @@
       <header class="heading heading--catalog">
         <h1 class="heading__title">Каталог товаров</h1>
       </header>
-      <section class="cards">
-        <h2 class="visually-hidden">Каталог продукции</h2>
-        <ul class="cards__list">
-          <li class="cards__item card">
-            <a class="card__item-link card__item-link--title" href="#">
-              <h3 class="card__item-title">Зайчик-попрыгайчик</h3>
+      <div class="container">
+        <section class="cards">
+          <h2 class="visually-hidden">Каталог продукции</h2>
+          <ul class="cards__list">
+            <li class="cards__item card">
+              <a class="card__item-link card__item-link--title" href="#">
+                <h3 class="card__item-title">Зайчик-попрыгайчик</h3>
+              </a>
+              <a class="card__item-link card__item-link--img" href="#">
+                <img class="card__item-img" width="260" height="195" src="img/photo-1-mobile.jpg"
+                  alt="Зайчик-попрыгайчик.">
+              </a>
+              <p class="card__item-details">Рост 30 см, вес 200 г</p>
+              <div class="card__item-inner">
+                <b class="card__item-price"><span class="card__item-count">1 200</span> руб.</b>
+                <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
+                    корзину.</span></button>
+              </div>
+            </li>
+            <li class="cards__item card">
+              <a class="card__item-link card__item-link--title" href="#">
+                <h3 class="card__item-title">Корзинка для белья</h3>
+              </a>
+              <a class="card__item-link card__item-link--img" href="#">
+                <img class="card__item-img" width="260" height="195" src="img/photo-2-mobile.jpg"
+                  alt="Корзинка для белья.">
+              </a>
+              <p class="card__item-details">Диаметр 15 см, высота 10 см</p>
+              <div class="card__item-inner">
+                <b class="card__item-price"><span class="card__item-count">690</span> руб.</b>
+                <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
+                    корзину.</span></button>
+              </div>
+            </li>
+            <li class="cards__item card">
+              <a class="card__item-link card__item-link--title" href="#">
+                <h3 class="card__item-title">Большая корзинка для игрушек</h3>
+              </a>
+              <a class="card__item-link card__item-link--img" href="#">
+                <img class="card__item-img" width="260" height="195" src="img/photo-3-mobile.jpg"
+                  alt="Большая корзинкадля игрушек.">
+              </a>
+              <p class="card__item-details">Диаметр 30 см, высота 30 см</p>
+              <div class="card__item-inner">
+                <b class="card__item-price"><span class="card__item-count">1 500</span> руб.</b>
+                <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
+                    корзину.</span></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="production">
+          <h2 class="production__title">Процесс производства</h2>
+          <div class="production__inner">
+            <a class="production__link video" href="#">
+              <img class="production__img" width="260" height="150" src="img/video-mobile.jpg"
+                alt="стопкадр из видео с процессом производства вязаныз корзинок.">
             </a>
-            <a class="card__item-link card__item-link--img" href="#">
-              <img class="card__item-img" width="260" height="195" src="img/photo-1-mobile.jpg"
-                alt="Зайчик-попрыгайчик.">
-            </a>
-            <p class="card__item-details">Рост 30 см, вес 200 г</p>
-            <div class="card__item-inner">
-              <b class="card__item-price"><span class="card__item-count">1 200</span> руб.</b>
-              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
-                  корзину.</span></button>
-            </div>
-          </li>
-          <li class="cards__item card">
-            <a class="card__item-link card__item-link--title" href="#">
-              <h3 class="card__item-title">Корзинка для белья</h3>
-            </a>
-            <a class="card__item-link card__item-link--img" href="#">
-              <img class="card__item-img" width="260" height="195" src="img/photo-2-mobile.jpg"
-                alt="Корзинка для белья.">
-            </a>
-            <p class="card__item-details">Диаметр 15 см, высота 10 см</p>
-            <div class="card__item-inner">
-              <b class="card__item-price"><span class="card__item-count">690</span> руб.</b>
-              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
-                  корзину.</span></button>
-            </div>
-          </li>
-          <li class="cards__item card">
-            <a class="card__item-link card__item-link--title" href="#">
-              <h3 class="card__item-title">Большая корзинка для игрушек</h3>
-            </a>
-            <a class="card__item-link card__item-link--img" href="#">
-              <img class="card__item-img" width="260" height="195" src="img/photo-3-mobile.jpg"
-                alt="Большая корзинкадля игрушек.">
-            </a>
-            <p class="card__item-details">Диаметр 30 см, высота 30 см</p>
-            <div class="card__item-inner">
-              <b class="card__item-price"><span class="card__item-count">1 500</span> руб.</b>
-              <button class="card__item-btn" type="button"><span class="visually-hidden">добавить в
-                  корзину.</span></button>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="production">
-        <h2 class="production__title">Процесс производства</h2>
-        <div class="production__inner">
-          <a class="production__link video" href="#">
-            <img class="production__img" width="260" height="150" src="img/video-mobile.jpg"
-              alt="стопкадр из видео с процессом производства вязаныз корзинок.">
-          </a>
-          <button class="production__btn" type="button"><span class="visually-hidden">открыть видео</span></button>
-        </div>
+            <button class="production__btn" type="button"><span class="visually-hidden">открыть видео</span></button>
+          </div>
 
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются наши товары.</p>
-        <a class="production__link-order interactive" href="#">Сделать заказ</a>
-      </section>
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются наши товары.</p>
+          <a class="production__link-order interactive" href="#">Сделать заказ</a>
+        </section>
+      </div>
     </main>
     <footer class="page__footer page-footer">
       <div class="container">
