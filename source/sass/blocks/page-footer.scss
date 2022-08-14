@@ -2,8 +2,54 @@
   padding-top: 28px;
   padding-bottom: 23px;
   background-color: $bg-color-light;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 260px;
+      height: 1px;
+      top: 50%;
+      left: 30px;
+      background-color: #e5e5e5;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__img {
+  width: 102px;
+  height: 34px;
 }
 
 // .page-footer__social {}
 
-// .page-footer__copyright {}
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+}

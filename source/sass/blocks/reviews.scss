@@ -1,5 +1,16 @@
 .reviews {
   padding-bottom: 45px;
+
+  .container {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      padding-top: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
+    }
+  }
 }
 
 .reviews__title {
@@ -12,4 +23,10 @@
 
 .reviews__link {
   width: 260px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 79px;
+  }
 }

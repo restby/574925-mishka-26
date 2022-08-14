@@ -10,14 +10,21 @@
 }
 
 .user-quote__author {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.user-quote__author-name {
   font-weight: 700;
   font-size: 17px;
   color: $font-color-dark;
 }
 
-.user-quote__link {
+.user-quote__author-link {
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
   color: $font-color-main;
+  text-decoration: none;
 }

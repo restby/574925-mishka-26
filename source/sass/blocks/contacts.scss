@@ -1,32 +1,121 @@
 .contacts {
   padding-top: 38px;
   padding-bottom: 39px;
+
+  .container {
+    width: 100%;
+    padding: 0;
+
+    @media (min-width: $desktop-width) {
+      width: 1150px;
+      padding: 0 50px;
+      padding-left: 225px;
+      display: grid;
+      grid-template-columns: 1fr 527px;
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 23px;
+    }
+  }
 }
 
 .contacts__title {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+    align-self: end;
+    grid-area: 1 / 1 / 2 / 2;
+  }
 }
 
 .contacts__detail-list {
+  width: 260px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+  display: grid;
+  grid-template-columns: auto 183px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    grid-template-columns: 53px auto 53px 257px;
+    grid-column-gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 327px;
+    grid-template-columns: auto 249px;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0;
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }
 
-// .contacts__detail-name {}
+.contacts__detail-name {
+  margin: 0;
+  padding: 0;
 
-// .contacts__detail-value {}
+  &--email {
+    @media (min-width: $tablet-width) {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+
+  &--adress {
+    @media (min-width: $tablet-width) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+  }
+}
+
+.contacts__detail-value {
+  margin: 0;
+  padding: 0;
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+  }
+
+  &--adress {
+    @media (min-width: $tablet-width) {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+}
 
 .contacts__detail-email {
   text-decoration: none;
   color: $font-color-main;
 }
 
-// .contacts__inner {}
+.contacts__inner {
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+}
 
 .contacts__img {
+  margin: 0 auto;
   margin-bottom: 42px;
+  width: 100%;
 }
 
 .contacts__btn {
+  display: block;
   width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: end;
+    margin: 0;
+  }
 }
