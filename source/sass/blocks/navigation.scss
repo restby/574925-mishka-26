@@ -1,5 +1,4 @@
 .navigation {
-  outline: 1px solid red;
   position: absolute;
   width: 320px;
   top: 79px;
@@ -188,13 +187,37 @@
   }
 }
 
+/**/
 .navigation--opened .navigation__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 700px auto;
+  }
 }
+
+/**/
 
 .navigation__inner {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  & .navigation__link {
+    @media (min-width: $desktop-width) {
+      margin-right: 58px;
+    }
+  }
 }
 
 .navigation__link {

@@ -1,5 +1,4 @@
 .site-list__link {
-  outline: 1px solid red;
   display: block;
   width: 260px;
   margin-left: auto;
@@ -20,11 +19,19 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    min-width: auto;
+    font-size: 17px;
     margin: 0;
     padding: 0;
     padding-top: 33px;
-    padding-left: 24px;
+    padding-right: 35px;
     min-height: 89px;
     border-right: 1px solid #ececec;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      margin-right: 34px;
+    }
   }
 }
