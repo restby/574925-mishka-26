@@ -1,7 +1,9 @@
 .reviews {
-  padding-bottom: 45px;
-
   .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 34px;
+
     @media (min-width: $tablet-width) {
       position: relative;
       padding-top: 83px;
@@ -18,7 +20,7 @@
 }
 
 .reviews__list {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .reviews__link {

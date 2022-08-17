@@ -28,42 +28,97 @@
   font-size: 17px;
   line-height: 20px;
   color: $font-color-dark;
+  position: relative;
 
   &:first-child {
     padding-top: 54px;
   }
 
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+  }
+
   &--materials {
+    &::before {
+      top: 0;
+      transform: translateX(8px);
+      width: 33px;
+      height: 38px;
+      background-image: url("../../img/svg/materials.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 1;
     }
   }
 
   &--style {
+    &::before {
+      top: 0;
+      transform: translateY(30px);
+      width: 47px;
+      height: 27px;
+      background-image: url("../../img/svg/style.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 3;
     }
   }
 
   &--likes {
+    &::before {
+      top: 35px;
+      transform: translateX(6px);
+      width: 34px;
+      height: 27px;
+      background-image: url("../../img/svg/likes.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 5;
     }
   }
 
   &--handmade {
+    &::before {
+      top: 32px;
+      transform: translateX(3px);
+      width: 35px;
+      height: 34px;
+      background-image: url("../../img/svg/handmade.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 2;
     }
   }
 
   &--manufacture {
+    &::before {
+      top: 33px;
+      transform: translateX(-5px);
+      width: 55px;
+      height: 23px;
+      background-image: url("../../img/svg/manufacture.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 4;
     }
   }
 
   &--package {
+    &::before {
+      top: 31px;
+      transform: translateX(2px);
+      width: 33px;
+      height: 32px;
+      background-image: url("../../img/svg/package.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 6;
     }

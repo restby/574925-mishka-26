@@ -19,11 +19,55 @@
 
 .slider__btn {
   width: 50%;
+  min-height: 52px;
+  position: relative;
   border: 1px solid #ececec;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 26px;
+    transform: translate(-50%, -50%);
+  }
+
+  &:focus {
+    background-color: $bg-color;
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-color;
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    background-color: $bg-color;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
-// .slider__btn--prev {}
+.slider__btn--prev {
+  &::before {
+    background-image: url("../../img/svg/arrow-left.svg");
+  }
+}
 
 .slider__btn--next {
   border-left: none;
+
+  &::before {
+    background-image: url("../../img/svg/arrow-right.svg");
+  }
 }
