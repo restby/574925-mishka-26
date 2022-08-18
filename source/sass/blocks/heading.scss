@@ -1,12 +1,12 @@
 .heading {
-  min-height: 506px;
   padding-top: 72px;
   background-color: $bg-color-light;
 
   &--index {
+    min-height: 489px;
     background-image: url("../../img/hero-mobile@2x.png");
     background-repeat: no-repeat;
-    background-position: 0 -17px;
+    background-position: 50% -17px;
 
     @media (min-width: $tablet-width) {
       background-position: 0 0;

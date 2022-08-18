@@ -1,14 +1,29 @@
 // .cart {}
 
-// .cart__container {}
+.cart__container {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 336px;
+  border: 1px solid #C6C6C6;
+  background-color: $bg-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  padding-top: 30px;
+
+  & .container {
+    width: 100%;
+  }
+}
 
 .cart__title {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: $font-color-dark;
   text-transform: uppercase;
+  text-align: center;
 }
 
-// .cart__form {}
+// .cart__form {
+// }

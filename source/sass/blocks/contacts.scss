@@ -105,6 +105,44 @@
 .contacts__detail-email {
   text-decoration: none;
   color: $font-color-main;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(3px);
+    background-color: #62D1BA;
+  }
+
+  &:focus {
+    color: #46C1AE;
+    outline: none;
+
+    &::after {
+      background-color: #46C1AE;
+    }
+  }
+
+  &:hover {
+    color: #46C1AE;
+
+    &::after {
+      background-color: #46C1AE;
+    }
+  }
+
+  &:active {
+    color: #62D1BA;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
 }
 
 .contacts__inner {

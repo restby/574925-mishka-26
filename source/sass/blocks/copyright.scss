@@ -18,4 +18,19 @@
   }
 }
 
-// .copyright__link {}
+.copyright__link {
+  color: $font-color-alternative;
+
+  &:focus {
+    outline: none;
+    color: #46c1ae;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

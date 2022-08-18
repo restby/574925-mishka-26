@@ -6,7 +6,7 @@
 .user-quote__text {
   line-height: 30px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .user-quote__author {
@@ -28,4 +28,17 @@
   line-height: 24px;
   color: $font-color-main;
   text-decoration: none;
+
+  &:focus {
+    color: #46C1AE;
+    outline: none;
+  }
+
+  &:hover {
+    color: #46C1AE;
+  }
+
+  &:active {
+    color: #62D1BA;
+  }
 }
