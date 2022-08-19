@@ -9,22 +9,6 @@
     width: 100%;
     padding: 0;
 
-    & svg {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -8px;
-        width: 100%;
-        height: 24px;
-        z-index: 3;
-        fill: #f1f1f1;
-      }
-    }
-
     @media (min-width: $tablet-width) {
       top: -121px;
       width: 768px;
@@ -34,6 +18,22 @@
     @media (min-width: $desktop-width) {
       width: 1150px;
       padding: 0 50px;
+    }
+  }
+
+  & svg {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 24px;
+      z-index: 3;
+      color: #f1f1f1;
     }
   }
 }

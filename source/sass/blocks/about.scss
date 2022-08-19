@@ -1,11 +1,16 @@
 .about {
   padding-top: 31px;
-  padding-bottom: 58px;
+  padding-bottom: 28px;
 
   .container {
     @media (min-width: $desktop-width) {
       padding-left: 225px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 80px;
   }
 }
 
@@ -32,6 +37,10 @@
 
   &:first-child {
     padding-top: 54px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 71px;
+    }
   }
 
   &::before {
@@ -47,6 +56,10 @@
       width: 33px;
       height: 38px;
       background-image: url("../../img/svg/materials.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 15px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -61,6 +74,10 @@
       width: 47px;
       height: 27px;
       background-image: url("../../img/svg/style.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 26px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -75,6 +92,11 @@
       width: 34px;
       height: 27px;
       background-image: url("../../img/svg/likes.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 63px;
+        transform: translateX(8px);
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -89,6 +111,10 @@
       width: 35px;
       height: 34px;
       background-image: url("../../img/svg/handmade.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 19px
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -103,6 +129,11 @@
       width: 55px;
       height: 23px;
       background-image: url("../../img/svg/manufacture.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 59px;
+        transform: translateX(-7px);
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -117,6 +148,10 @@
       width: 33px;
       height: 32px;
       background-image: url("../../img/svg/package.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 58px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -126,6 +161,9 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 110px;
   }
 }
 
@@ -135,7 +173,11 @@
 
 // .about__item--likes {}
 
-// .about__item--handmade {}
+.about__item--handmade {
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+  }
+}
 
 // .about__item--manufacture {}
 

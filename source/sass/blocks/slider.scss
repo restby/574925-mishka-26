@@ -1,5 +1,3 @@
-// .slider {}
-
 .slider__list {
   @include list-reset;
 }
@@ -12,8 +10,9 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 70px;
+    bottom: 1px;
+    margin-bottom: 0;
   }
 }
 
@@ -56,11 +55,20 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    min-width: 50px;
+  }
 }
 
 .slider__btn--prev {
   &::before {
     background-image: url("../../img/svg/arrow-left.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
   }
 }
 

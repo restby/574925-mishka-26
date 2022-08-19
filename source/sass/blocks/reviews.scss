@@ -1,4 +1,6 @@
 .reviews {
+  padding-top: 30px;
+  padding-bottom: 59px;
   position: relative;
 
   & svg {
@@ -8,30 +10,47 @@
     bottom: 9px;
     width: 100%;
     color: #f1f1f1;
+    z-index: 3;
+
+    @media (min-width: $tablet-width) {
+      height: 24px;
+    }
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 59px;
 
     @media (min-width: $tablet-width) {
       position: relative;
-      padding-top: 83px;
+      padding-top: 4px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 225px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 79px;
+    padding-bottom: 147px;
+  }
 }
 
 .reviews__title {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__list {
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__link {
@@ -39,7 +58,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
-    top: 79px;
+    right: 50px;
+    top: 1px;
+    width: 175px;
   }
 }
