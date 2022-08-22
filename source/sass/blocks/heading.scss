@@ -19,7 +19,10 @@
     }
   }
 
-  &--catalog {}
+  &--catalog {
+    padding-top: 72px;
+    min-height: 177px;
+  }
 }
 
 .heading__title {
