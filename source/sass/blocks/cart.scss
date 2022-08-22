@@ -9,6 +9,11 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   padding-top: 30px;
 
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-top: 36px;
+  }
+
   & .container {
     width: 100%;
   }
@@ -23,6 +28,12 @@
   color: $font-color-dark;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 13px;
+  }
 }
 
 // .cart__form {

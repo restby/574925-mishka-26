@@ -9,6 +9,11 @@
   margin: 0;
   margin-bottom: 21px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
 }
 
 .cart-form__group {
@@ -20,6 +25,10 @@
   grid-column-gap: 7px;
   grid-row-gap: 7px;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 112px);
+  }
 }
 
 .cart-form__inner {
@@ -72,4 +81,8 @@
   background-color: $bg-color-alternetive;
   color: $font-color-light;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }
