@@ -12,6 +12,10 @@
     font-size: 17px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .user-quote__author {
@@ -34,6 +38,12 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 3px;
   }
 }
 
@@ -60,5 +70,9 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
   }
 }

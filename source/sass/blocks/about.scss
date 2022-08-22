@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 66px;
-    padding-bottom: 111px;
+    padding-bottom: 90px;
   }
 }
 
@@ -33,6 +33,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 325px);
+    grid-column-gap: 24px;
   }
 }
 
@@ -177,6 +183,10 @@
     font-size: 20px;
     line-height: 22px;
     padding-top: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 

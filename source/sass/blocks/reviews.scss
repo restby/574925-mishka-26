@@ -3,7 +3,7 @@
   padding-bottom: 59px;
   position: relative;
   background-image: url("../../img/reviews-bg.jpg");
-  background-position: 0 0;
+  background-position: 50px 0;
   background-repeat: no-repeat;
 
   & svg {
@@ -24,6 +24,11 @@
     padding-top: 79px;
     padding-bottom: 147px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 198px;
+  }
 }
 
 .reviews .container {
@@ -37,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
+    padding-top: 0;
   }
 }
 
@@ -45,6 +51,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 
@@ -65,4 +75,6 @@
     top: 1px;
     width: 175px;
   }
+
+  @media (min-width: $desktop-width) {}
 }
