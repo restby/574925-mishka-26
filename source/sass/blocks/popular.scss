@@ -1,26 +1,6 @@
 .popular {
   position: relative;
 
-  .container {
-    position: absolute;
-    top: -206px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 0;
-
-    @media (min-width: $tablet-width) {
-      top: -121px;
-      width: 768px;
-      padding: 0 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1150px;
-      padding: 0 50px;
-    }
-  }
-
   & svg {
     display: none;
 
@@ -35,6 +15,26 @@
       z-index: 3;
       color: #f1f1f1;
     }
+  }
+}
+
+.popular .container {
+  position: absolute;
+  top: -206px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -121px;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
   }
 }
 

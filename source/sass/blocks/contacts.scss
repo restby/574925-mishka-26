@@ -2,44 +2,44 @@
   padding-top: 30px;
   padding-bottom: 39px;
 
-  .container {
-    width: 100%;
-    padding: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 57px;
+  }
+}
 
-    &::before {
-      display: none;
-      position: absolute;
-      content: "";
-      width: 47px;
-      height: 81px;
-      background-image: url(../../img/svg/flag.svg);
+.contacts .container {
+  width: 100%;
+  padding: 0;
 
-      @media (min-width: $tablet-width) {
-        display: block;
-        top: 0;
-        right: 54px;
-        transform: translateY(-20px);
-      }
-    }
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url(../../img/svg/flag.svg);
 
     @media (min-width: $tablet-width) {
-      position: relative;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1150px;
-      padding: 0 50px;
-      padding-left: 225px;
-      display: grid;
-      grid-template-columns: 1fr 527px;
-      grid-template-rows: repeat(3, auto);
-      grid-column-gap: 23px;
+      display: block;
+      top: 0;
+      right: 54px;
+      transform: translateY(-20px);
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
-    padding-bottom: 57px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+    padding-left: 225px;
+    display: grid;
+    grid-template-columns: 1fr 527px;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 23px;
   }
 }
 

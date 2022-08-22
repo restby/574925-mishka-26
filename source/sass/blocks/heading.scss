@@ -1,8 +1,8 @@
 .heading {
-  padding-top: 72px;
   background-color: $bg-color-light;
 
   &--index {
+    padding-top: 72px;
     min-height: 489px;
     background-image: url("../../img/hero-mobile@2x.png");
     background-repeat: no-repeat;
@@ -10,16 +10,13 @@
 
     @media (min-width: $tablet-width) {
       background-position: 0 0;
+      padding-top: 153px;
+      min-height: 746px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 153px;
-    min-height: 746px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 157px;
+    @media (min-width: $desktop-width) {
+      padding-top: 157px;
+    }
   }
 }
 
@@ -38,5 +35,10 @@
     margin-right: auto;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

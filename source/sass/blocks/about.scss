@@ -2,15 +2,20 @@
   padding-top: 31px;
   padding-bottom: 28px;
 
-  .container {
-    @media (min-width: $desktop-width) {
-      padding-left: 225px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 54px;
     padding-bottom: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 111px;
+  }
+}
+
+.about .container {
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
   }
 }
 
@@ -39,6 +44,10 @@
   color: $font-color-dark;
   position: relative;
 
+  /*
+
+дальше
+*/
   &:first-child {
     padding-top: 54px;
 

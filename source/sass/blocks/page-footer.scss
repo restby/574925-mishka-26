@@ -3,34 +3,34 @@
   padding-bottom: 23px;
   background-color: $bg-color-light;
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+  }
+}
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 260px;
-      height: 1px;
-      top: 50%;
-      left: 30px;
-      transform: translateY(-2px);
-      background-color: #e5e5e5;
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 1px;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-2px);
+    background-color: #e5e5e5;
 
     @media (min-width: $tablet-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      display: none;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 51px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
