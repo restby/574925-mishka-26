@@ -10,12 +10,16 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 54px;
-    padding-bottom: 80px;
+    padding-bottom: 83px;
   }
 }
 
 .about__title {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .about__list {

@@ -6,6 +6,26 @@
     width: 100%;
     padding: 0;
 
+    &::before {
+      display: none;
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url(../../img/svg/flag.svg);
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        top: 0;
+        right: 54px;
+        transform: translateY(-20px);
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
     @media (min-width: $desktop-width) {
       width: 1150px;
       padding: 0 50px;
@@ -19,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
+    padding-bottom: 57px;
   }
 }
 
@@ -49,6 +70,7 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
+    margin-bottom: 49px;
     display: grid;
     grid-column-gap: 25px;
     font-size: 17px;
@@ -67,6 +89,7 @@
 
 .contacts__detail-group {
   display: flex;
+  flex-wrap: wrap;
 
   &:first-child {
     margin-bottom: 30px;
@@ -111,10 +134,7 @@
   &--adress {
     @media (min-width: $tablet-width) {
       width: auto;
-      /**
-      дальше
-
-      */
+      max-width: 257px;
     }
   }
 }
@@ -172,6 +192,11 @@
   display: none;
   margin: 0 auto;
   width: 100%;
+
+  &--show {
+    display: block;
+    height: 457px;
+  }
 }
 
 .contacts__btn {
@@ -179,6 +204,12 @@
   width: 260px;
   margin: 0 auto;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-top: 51px;
+    font-size: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: 3 / 1 / 4 / 2;
