@@ -50,6 +50,38 @@
       min-height: 255px;
     }
   }
+
+  &--order {
+    padding-top: 72px;
+    min-height: 177px;
+    position: relative;
+
+    & svg {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 24px;
+        z-index: 3;
+        color: $bg-color;
+      }
+    }
+
+    // @media (min-width: $tablet-width) {
+    //   padding-top: 98px;
+    //   min-height: 226px;
+    // }
+
+    // @media (min-width: $desktop-width) {
+    //   padding-top: 100px;
+    //   min-height: 255px;
+    // }
+  }
 }
 
 .heading__title {
