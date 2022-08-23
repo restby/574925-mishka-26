@@ -1,12 +1,23 @@
 .order__inner {
   padding-top: 17px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 50px;
+  }
 }
 
 .order__text {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 63px;
+  }
 }
 
 // .order__form {}
