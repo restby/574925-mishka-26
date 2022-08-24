@@ -6,6 +6,10 @@
     padding-top: 64px;
     padding-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+  }
 }
 
 .order__text {
@@ -18,6 +22,10 @@
     line-height: 30px;
     margin-bottom: 63px;
   }
-}
 
-// .order__form {}
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+    width: 702px;
+    margin-bottom: 61px;
+  }
+}

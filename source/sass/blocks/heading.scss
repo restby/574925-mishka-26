@@ -77,10 +77,10 @@
       min-height: 226px;
     }
 
-    // @media (min-width: $desktop-width) {
-    //   padding-top: 100px;
-    //   min-height: 255px;
-    // }
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+      min-height: 255px;
+    }
   }
 }
 

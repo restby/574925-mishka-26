@@ -21,6 +21,10 @@
         display: grid;
         grid-template-columns: 260px 239px;
       }
+
+      @media (min-width: $desktop-width) {
+        grid-template-columns: 262px 264px 399px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -29,9 +33,9 @@
       padding-bottom: 29px;
     }
 
-    // @media (min-width: $desktop-width) {
-    //   grid-template-columns: repeat(3, auto);
-    // }
+    @media (min-width: $desktop-width) {
+      padding-top: 48px;
+    }
   }
 
   &--full-name {
@@ -40,6 +44,16 @@
     @media (min-width: $tablet-width) {
       padding-top: 50px;
       padding-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 51px;
+    }
+
+    & .container {
+      @media (min-width: $desktop-width) {
+        padding-right: 225px;
+      }
     }
   }
 
@@ -51,6 +65,12 @@
       padding-top: 50px;
       padding-bottom: 0;
     }
+
+    & .container {
+      @media (min-width: $desktop-width) {
+        padding-right: 225px;
+      }
+    }
   }
 
   &--email {
@@ -60,12 +80,28 @@
       background-color: #f1f1f1;
       padding-bottom: 26px;
     }
+
+    & .container {
+      @media (min-width: $desktop-width) {
+        padding-right: 225px;
+      }
+    }
   }
 
   &--addition {
     @media (min-width: $tablet-width) {
       padding-top: 50px;
       padding-bottom: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 25px;
+    }
+
+    & .container {
+      @media (min-width: $desktop-width) {
+        padding-right: 225px;
+      }
     }
   }
 
@@ -74,6 +110,10 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 217px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
     }
   }
 }
@@ -109,6 +149,11 @@
     position: absolute;
     top: 20px;
     left: 50px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
   }
 
   &--type {
@@ -185,6 +230,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 79px;
     font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-left: 81px;
   }
 
   &--radio {
@@ -273,6 +323,11 @@
         left: 8px;
         background-image: url("../../img/svg/tick-tablet.svg");
       }
+
+      @media (min-width: $desktop-width) {
+        top: 16px;
+        left: 9px;
+      }
     }
 
     &:hover {
@@ -288,6 +343,10 @@
 
   &--full-name {
     padding-left: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
   }
 
 }
@@ -402,6 +461,10 @@
       width: 428px;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 626px;
+    }
+
   }
 
   &--last-name {
@@ -409,6 +472,9 @@
       width: 375px;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 573px;
+    }
   }
 
   &--middle-name {
@@ -416,6 +482,9 @@
       width: 375px;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 573px;
+    }
   }
 
   &--message {
@@ -474,6 +543,10 @@
     @media (min-width: $tablet-width) {
       right: 27px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 8px;
+    }
   }
 
   &--email {
@@ -484,6 +557,10 @@
 
     @media (min-width: $tablet-width) {
       right: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 4px;
     }
   }
 }
@@ -496,6 +573,11 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
+      padding-right: 225px;
     }
   }
 }
