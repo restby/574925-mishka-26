@@ -10,7 +10,7 @@
     width: $tablet-container-width;
     top: 0;
     background-color: transparent;
-    box-shadow: none
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +57,7 @@
   box-shadow: 0 -1px 0 0 #ececec inset;
 
   @media (min-width: $tablet-width) {
-    box-shadow: none
+    box-shadow: none;
   }
 }
 
@@ -83,7 +83,7 @@
   cursor: pointer;
   position: absolute;
   top: -46px;
-  right: 9.375%;
+  right: 9.38%;
   background-color: transparent;
   z-index: 2;
 

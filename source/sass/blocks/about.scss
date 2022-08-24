@@ -50,10 +50,6 @@
   color: $font-color-dark;
   position: relative;
 
-  /*
-
-дальше
-*/
   &:first-child {
     padding-top: 54px;
 
@@ -132,11 +128,12 @@
       background-image: url("../../img/svg/handmade.svg");
 
       @media (min-width: $tablet-width) {
-        top: 19px
+        top: 19px;
       }
     }
 
     @media (min-width: $tablet-width) {
+      padding-top: 71px;
       order: 2;
     }
   }
@@ -189,19 +186,3 @@
     width: auto;
   }
 }
-
-// .about__item--materials {}
-
-// .about__item--style {}
-
-// .about__item--likes {}
-
-.about__item--handmade {
-  @media (min-width: $tablet-width) {
-    padding-top: 71px;
-  }
-}
-
-// .about__item--manufacture {}
-
-// .about__item--package {}

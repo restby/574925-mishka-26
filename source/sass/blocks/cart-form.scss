@@ -36,7 +36,6 @@
 }
 
 .cart-form__label {
-  display: inline-block;
   min-width: 82px;
   min-height: 52px;
   border: 2px solid rgba($bg-color-dark, 0.1);
@@ -55,20 +54,20 @@
 .cart-form__input {
   text-transform: uppercase;
 
-  &:focus~.cart-form__label {
+  &:focus ~ .cart-form__label {
     outline: none;
     border: 2px solid rgba($bg-color-dark, 0.3);
   }
 
-  &:hover~.cart-form__label {
+  &:hover ~ .cart-form__label {
     border: 2px solid rgba($bg-color-dark, 0.3);
   }
 
-  &:active~.cart-form__label {
+  &:active ~ .cart-form__label {
     border: 2px solid #62d1ba;
   }
 
-  &:checked~.cart-form__label {
+  &:checked ~ .cart-form__label {
     border: 2px solid #62d1ba;
   }
 }

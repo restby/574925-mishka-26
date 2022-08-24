@@ -23,7 +23,7 @@
     content: "";
     width: 47px;
     height: 81px;
-    background-image: url(../../img/svg/flag.svg);
+    background-image: url("../../img/svg/flag.svg");
 
     @media (min-width: $tablet-width) {
       display: block;
@@ -181,7 +181,7 @@
     right: 0;
     bottom: 0;
     transform: translateY(3px);
-    background-color: #62D1BA;
+    background-color: #62d1ba;
 
     @media (min-width: $desktop-width) {
       transform: translateY(9px);
@@ -189,24 +189,24 @@
   }
 
   &:focus {
-    color: #46C1AE;
+    color: #46c1ae;
     outline: none;
 
     &::after {
-      background-color: #46C1AE;
+      background-color: #46c1ae;
     }
   }
 
   &:hover {
-    color: #46C1AE;
+    color: #46c1ae;
 
     &::after {
-      background-color: #46C1AE;
+      background-color: #46c1ae;
     }
   }
 
   &:active {
-    color: #62D1BA;
+    color: #62d1ba;
 
     &::after {
       background-color: transparent;
