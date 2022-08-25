@@ -55,23 +55,50 @@ textarea {
   margin: 0;
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   color: $font-color-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .interactive {
   display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 2px solid #444444;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 2px solid $bg-color-dark;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #444444;
+  color: $font-color-main;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
   background-color: transparent;
   text-transform: uppercase;
+
+  &:focus {
+    color: $font-color-light;
+    background-color: $bg-color-dark;
+    outline: none;
+  }
+
+  &:hover {
+    color: $font-color-light;
+    background-color: $bg-color-dark;
+  }
+
+  &:active {
+    color: rgba($font-color-light, 0.3);
+    background-color: $bg-color-dark;
+  }
 }
 
 .container {

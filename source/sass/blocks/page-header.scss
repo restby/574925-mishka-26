@@ -1,31 +1,62 @@
 .page-header {
-  .container {
-    display: flex;
-    flex-direction: column;
+  box-shadow: 0 1px 0 0 #ececec inset, 0 -1px 0 0 #ececec inset;
 
-    @media (min-width: $tablet-width) {
-      position: relative;
-    }
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 -1px 0 0 #ececec inset;
+  }
+}
+
+.page-header .container {
+  width: 320px;
+  min-height: 79px;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    min-height: 89px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding-top: 9px;
+    padding-bottom: 7px;
   }
 }
 
 .page-header__logo {
-  width: 116px;
-  height: 22px;
+  display: block;
+  margin-left: 116px;
+  width: 86px;
+  height: 35px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 114px;
+    margin-left: 0;
+    width: 113px;
     height: 46px;
-    position: absolute;
-    top: 0;
-    left: 50px;
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
     width: 149px;
     height: 72px;
-    position: absolute;
-    top: 0;
-    left: 50%;
+  }
+
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
   }
 }

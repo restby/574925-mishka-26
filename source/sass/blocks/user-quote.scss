@@ -6,25 +6,73 @@
 .user-quote__text {
   line-height: 30px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .user-quote__author {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .user-quote__author-name {
   font-weight: 700;
   font-size: 17px;
+  line-height: 30px;
   color: $font-color-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 3px;
+  }
 }
 
 .user-quote__author-link {
   font-weight: 400;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   color: $font-color-main;
   text-decoration: none;
+
+  &:focus {
+    color: #46c1ae;
+    outline: none;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #62d1ba;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+  }
 }

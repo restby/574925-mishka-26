@@ -1,11 +1,86 @@
 .heading {
-  padding-top: 73px;
-  padding-bottom: 74px;
   background-color: $bg-color-light;
 
   &--index {
+    padding-top: 72px;
+    min-height: 489px;
     background-image: url("../../img/hero-mobile@2x.png");
     background-repeat: no-repeat;
+    background-position: 50% -17px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 0 0;
+      padding-top: 153px;
+      min-height: 746px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 157px;
+    }
+  }
+
+  &--catalog {
+    padding-top: 72px;
+    min-height: 177px;
+    position: relative;
+
+    & svg {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 24px;
+        z-index: 3;
+        color: $bg-color;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 98px;
+      min-height: 226px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+      min-height: 255px;
+    }
+  }
+
+  &--order {
+    padding-top: 72px;
+    min-height: 177px;
+    position: relative;
+
+    & svg {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 24px;
+        z-index: 3;
+        color: $bg-color;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 98px;
+      min-height: 226px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 100px;
+      min-height: 255px;
+    }
   }
 }
 
@@ -22,5 +97,12 @@
     width: 668px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
