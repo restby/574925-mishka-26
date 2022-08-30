@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;
-    padding-bottom: 72px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -189,12 +189,22 @@
   padding: 0;
 }
 
-.action__img {
+.action__img-wrapper {
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
     grid-area: 2 / 2 / 4 / 3;
+  }
+}
+
+.action__img {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
   }
 }
 
@@ -205,7 +215,7 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 3 / 1 / 4 / 2;
-    padding-top: 57px;
+    padding-top: 31px;
   }
 
   @media (min-width: $desktop-width) {

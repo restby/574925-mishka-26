@@ -113,7 +113,7 @@
       height: 62px;
       top: 23px;
       right: 6px;
-      background-image: url("../../img/svg/interior.svg.svg");
+      background-image: url("../../img/svg/interior.svg");
 
       @media (min-width: $tablet-width) {
         top: 30px;
@@ -128,7 +128,7 @@
       height: 60px;
       top: 21px;
       transform: translateX(3px);
-      background-image: url("../../img/svg/toy-svg.svg");
+      background-image: url("../../img/svg/toy.svg");
 
       @media (min-width: $tablet-width) {
         top: 31px;
