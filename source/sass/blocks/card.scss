@@ -99,6 +99,18 @@
 
 .card__item-img {
   margin-bottom: 0;
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .card__item-details {

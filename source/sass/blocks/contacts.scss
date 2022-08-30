@@ -230,11 +230,10 @@
   &--show {
     display: block;
     height: 457px;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 527px;
-    height: 457px;
+    @media (min-width: $desktop-width) {
+      width: 527px;
+    }
   }
 }
 
