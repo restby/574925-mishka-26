@@ -75,15 +75,13 @@
   }
 }
 
-.navigation__togle {
-  width: 20px;
-  height: 14px;
+.navigation__toggle {
   padding: 0;
   border: none;
   cursor: pointer;
   position: absolute;
-  top: -46px;
-  right: 9.38%;
+  top: -47px;
+  right: 31px;
   background-color: transparent;
   z-index: 2;
 
@@ -91,102 +89,108 @@
     display: none;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $dark-color;
-    box-shadow: 0 6px 0 0 $dark-color, 0 12px 0 0 $dark-color;
-  }
-
   &:focus {
     outline: none;
 
-    &::before {
-      background-color: $bg-color-alternetive;
-      box-shadow: 0 6px 0 0 $bg-color-alternetive, 0 12px 0 0 $bg-color-alternetive;
+    & .navigation__toggle-icon {
+      color: #63d1bb;
     }
   }
 
   &:hover {
-    &::before {
-      background-color: $bg-color-alternetive;
-      box-shadow: 0 6px 0 0 $bg-color-alternetive, 0 12px 0 0 $bg-color-alternetive;
+    & .navigation__toggle-icon {
+      color: #63d1bb;
     }
   }
 
   &:active {
-    &::before {
-      background-color: rgba($bg-color-alternetive, 0.4);
-      box-shadow: 0 6px 0 0 rgba($bg-color-alternetive, 0.4), 0 12px 0 0 rgba($bg-color-alternetive, 0.4);
+    & .navigation__toggle-icon {
+      color: rgba(#63d1bb, 0.3);
     }
   }
 }
 
-.navigation--opened .navigation__togle {
+.navigation__toggle-icon--open {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navigation__toggle-icon--close {
   width: 21px;
   height: 20px;
-  top: -49px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: -4px;
-    width: 28px;
-    height: 2px;
-    transform: rotate(45deg);
-    background-color: $dark-color;
-    box-shadow: none;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: -4px;
-    width: 28px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background-color: $dark-color;
-    box-shadow: none;
-  }
-
-  &:focus {
-    outline: none;
-
-    &::before {
-      background-color: $bg-color-alternetive;
-    }
-
-    &::after {
-      background-color: $bg-color-alternetive;
-    }
-  }
-
-  &:hover {
-    &::before {
-      background-color: $bg-color-alternetive;
-    }
-
-    &::after {
-      background-color: $bg-color-alternetive;
-    }
-  }
-
-  &:active {
-    &::before {
-      background-color: rgba($bg-color-alternetive, 0.4);
-    }
-
-    &::after {
-      background-color: rgba($bg-color-alternetive, 0.4);
-    }
-  }
+  position: absolute;
+  top: -3px;
+  right: -1px;
 }
+
+.navigation__toggle-icon--hide {
+  display: none;
+}
+
+// .navigation--opened .navigation__toggle {
+//   width: 21px;
+//   height: 20px;
+//   top: -49px;
+
+//   // &::before {
+//   //   content: "";
+//   //   position: absolute;
+//   //   top: 9px;
+//   //   left: -4px;
+//   //   width: 28px;
+//   //   height: 2px;
+//   //   transform: rotate(45deg);
+//   //   background-color: $dark-color;
+//   //   box-shadow: none;
+//   // }
+
+//   // &::after {
+//   //   content: "";
+//   //   position: absolute;
+//   //   top: 9px;
+//   //   left: -4px;
+//   //   width: 28px;
+//   //   height: 2px;
+//   //   transform: rotate(-45deg);
+//   //   background-color: $dark-color;
+//   //   box-shadow: none;
+//   // }
+
+//   // &:focus {
+//   //   outline: none;
+
+//   //   &::before {
+//   //     background-color: $bg-color-alternetive;
+//   //   }
+
+//   //   &::after {
+//   //     background-color: $bg-color-alternetive;
+//   //   }
+//   // }
+
+//   // &:hover {
+//   //   &::before {
+//   //     background-color: $bg-color-alternetive;
+//   //   }
+
+//   //   &::after {
+//   //     background-color: $bg-color-alternetive;
+//   //   }
+//   // }
+
+//   // &:active {
+//   //   &::before {
+//   //     background-color: rgba($bg-color-alternetive, 0.4);
+//   //   }
+
+//   //   &::after {
+//   //     background-color: rgba($bg-color-alternetive, 0.4);
+//   //   }
+//   // }
+// }
 
 .navigation--opened .navigation__wrapper {
   display: flex;
