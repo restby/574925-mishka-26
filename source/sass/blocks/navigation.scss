@@ -110,25 +110,28 @@
   }
 }
 
-.navigation__toggle-icon--open {
-  width: 20px;
-  height: 14px;
-  position: absolute;
-  top: 0;
-  right: 0;
+.navigation__toggle-icon {
+  &--open {
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--close {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: -3px;
+    right: -1px;
+  }
+
+  &--hide {
+    display: none;
+  }
 }
 
-.navigation__toggle-icon--close {
-  width: 21px;
-  height: 20px;
-  position: absolute;
-  top: -3px;
-  right: -1px;
-}
-
-.navigation__toggle-icon--hide {
-  display: none;
-}
 
 // .navigation--opened .navigation__toggle {
 //   width: 21px;
