@@ -39,19 +39,25 @@
     min-height: 177px;
     position: relative;
 
-    & svg {
+    &::after {
       display: none;
 
       @media (min-width: $tablet-width) {
         display: block;
         position: absolute;
+        content: "";
+        width: 100%;
+        height: 24px;
         left: 0;
         right: 0;
         bottom: 0;
-        width: 100%;
-        height: 24px;
-        z-index: 3;
-        color: $bg-color;
+        z-index: 4;
+        background-image: url("../../img/svg/zigzag-fill-tablet.svg");
+      }
+
+      @media (min-width: $desktop-width) {
+        height: 34px;
+        background-image: url("../../img/svg/zigzag-fill-desktop.svg");
       }
     }
 
@@ -71,19 +77,25 @@
     min-height: 177px;
     position: relative;
 
-    & svg {
+    &::after {
       display: none;
 
       @media (min-width: $tablet-width) {
         display: block;
         position: absolute;
+        content: "";
+        width: 100%;
+        height: 24px;
         left: 0;
         right: 0;
         bottom: 0;
-        width: 100%;
-        height: 24px;
-        z-index: 3;
-        color: $bg-color;
+        z-index: 4;
+        background-image: url("../../img/svg/zigzag-fill-tablet.svg");
+      }
+
+      @media (min-width: $desktop-width) {
+        height: 34px;
+        background-image: url("../../img/svg/zigzag-fill-desktop.svg");
       }
     }
 
