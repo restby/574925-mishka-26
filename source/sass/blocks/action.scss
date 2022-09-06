@@ -4,13 +4,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
+    padding-top: 5px;
     padding-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 18px;
-    padding-bottom: 97px;
+    padding-top: 2px;
+    padding-bottom: 72px;
   }
 
   &::after {
@@ -234,7 +234,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 3 / 1 / 4 / 2;
-    padding-top: 109px;
+    padding-top: 86px;
   }
 }
 
