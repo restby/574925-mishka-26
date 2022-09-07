@@ -28,11 +28,11 @@
         <nav class="page-header__navigation navigation">
           <button class="navigation__toggle" type="button">
             <svg class="navigation__toggle-icon navigation__toggle-icon--open" aria-hidden="true" focusable="false"
-              fill="currentColor" width="20" height="14" fill="none">
+              fill="currentColor" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-menu"></use>
             </svg>
             <svg class="navigation__toggle-icon navigation__toggle-icon--close navigation__toggle-icon--hide"
-              aria-hidden="true" focusable="false" fill="currentColor" width="21" height="20" fill="none">
+              aria-hidden="true" focusable="false" fill="currentColor" width="21" height="20">
               <use xlink:href="img/sprite.svg#icon-menu-close"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
@@ -87,9 +87,11 @@
             свяжемся с вами, чтобы уточнить детали.</p>
         </div>
         <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="GET">
+
+
           <fieldset class="order-form__group order-form__group--type">
+            <legend class="order-form__group-title order-form__group-title--type">Тип</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--type">Тип</legend>
               <p class="order-form__group-wrapper order-form__group-wrapper--type">
                 <input class="order-form__input-radio visually-hidden" id="interior-accessory" type="radio" name="type"
                   value="interior-accessory" checked>
@@ -108,8 +110,8 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form__group--color">
+            <legend class="order-form__group-title order-form__group-title--color">Цвет</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--color">Цвет</legend>
               <p class="order-form__group-wrapper order-form__group-wrapper--color">
                 <input class="order-form__input-checkbox visually-hidden" id="white" type="checkbox" name="white"
                   checked>
@@ -138,8 +140,8 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form__group--full-name">
+            <legend class="order-form__group-title order-form__group-title--full-name">Фио</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--full-name">Фио</legend>
               <p class="order-form__inner">
                 <label class="order-form__label order-form__label--full-name" for="first-name">Имя:</label>
                 <input class="order-form__input-text order-form__input-text--first-name" id="first-name"
@@ -158,8 +160,8 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form__group--phone">
+            <legend class="order-form__group-title order-form__group-title--phone">тел</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--phone">тел</legend>
               <p class="order-form__inner">
                 <label class="visually-hidden" for="phone">контактный номер телефона.</label>
                 <input class="order-form__input-text order-form__input-text--phone" id="phone" name="phone"
@@ -172,8 +174,8 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form__group--email">
+            <legend class="order-form__group-title order-form__group-title--email">E-mail</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--email">E-mail</legend>
               <p class="order-form__inner">
                 <label class="visually-hidden" for="email">контактный адрес электронной почты.</label>
                 <input class="order-form__input-text order-form__input-text--email" id="email" name="email"
@@ -186,8 +188,8 @@
             </div>
           </fieldset>
           <fieldset class="order-form__group order-form__group--addition">
+            <legend class="order-form__group-title order-form__group-title--addition">Доп</legend>
             <div class="container">
-              <legend class="order-form__group-title order-form__group-title--addition">Доп</legend>
               <p class="order-form__inner order-form__inner--addition">
                 <label class="visually-hidden" for="message">контактный адрес электронной почты.</label>
                 <textarea class="order-form__input-text order-form__input-text--message" id="message" name="message"
@@ -195,6 +197,8 @@
               </p>
             </div>
           </fieldset>
+
+
           <div class="order-form__wrapper">
             <div class="container">
               <small class="order-form__note">*Поля обязательны для заполнения</small>

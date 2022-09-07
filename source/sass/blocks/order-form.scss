@@ -16,6 +16,16 @@
   &--color {
     padding-bottom: 7px;
 
+    @media (min-width: $tablet-width) {
+      background-color: #f1f1f1;
+      padding-top: 50px;
+      padding-bottom: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 48px;
+    }
+
     & .container {
       @media (min-width: $tablet-width) {
         display: grid;
@@ -25,16 +35,6 @@
       @media (min-width: $desktop-width) {
         grid-template-columns: 262px 264px 399px;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      background-color: #f1f1f1;
-      padding-top: 50px;
-      padding-bottom: 29px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 48px;
     }
   }
 
@@ -105,17 +105,17 @@
     }
   }
 
-  & .container {
-    position: relative;
+  // & .container {
+  //   position: relative;
 
-    @media (min-width: $tablet-width) {
-      padding-left: 217px;
-    }
+  //   @media (min-width: $tablet-width) {
+  //     padding-left: 217px;
+  //   }
 
-    @media (min-width: $desktop-width) {
-      padding-left: 225px;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     padding-left: 225px;
+  //   }
+  // }
 }
 
 .order-form__group-title {
