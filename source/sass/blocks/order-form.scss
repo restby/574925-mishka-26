@@ -4,17 +4,22 @@
   border: none;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &--type {
-    padding-bottom: 19px;
+    padding-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 26px;
     }
+
+    & .container {
+      @media (min-width: $tablet-width) {}
+    }
   }
 
   &--color {
-    padding-bottom: 7px;
+    padding-bottom: 11px;
 
     @media (min-width: $tablet-width) {
       background-color: #f1f1f1;
@@ -39,7 +44,7 @@
   }
 
   &--full-name {
-    padding-bottom: 9px;
+    padding-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;
@@ -58,7 +63,7 @@
   }
 
   &--phone {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       background-color: #f1f1f1;
@@ -105,30 +110,28 @@
     }
   }
 
-  // & .container {
-  //   position: relative;
+  & .container {
+    @media (min-width: $tablet-width) {
+      padding-left: 217px;
+    }
 
-  //   @media (min-width: $tablet-width) {
-  //     padding-left: 217px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     padding-left: 225px;
-  //   }
-  // }
+    @media (min-width: $desktop-width) {
+      padding-left: 225px;
+    }
+  }
 }
 
 .order-form__group-title {
-  display: inline-block;
+  display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $font-color-alternative;
   text-transform: uppercase;
   position: relative;
-  width: 100%;
+  width: 260px;
 
   &::after {
     position: absolute;
@@ -158,13 +161,18 @@
 
   &--type {
     margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--color {
     margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      top: 17px;
+      top: 67px;
+      margin-bottom: 0;
     }
   }
 
@@ -172,7 +180,8 @@
     margin-bottom: 28px;
 
     @media (min-width: $tablet-width) {
-      top: 18px;
+      margin-bottom: 0;
+      top: 67px;
     }
   }
 
@@ -180,7 +189,8 @@
     margin-bottom: 4px;
 
     @media (min-width: $tablet-width) {
-      top: 16px;
+      top: 67px;
+      margin-bottom: 0;
     }
   }
 
@@ -193,11 +203,17 @@
 
     @media (min-width: $tablet-width) {
       top: 16px;
+      margin-bottom: 0;
     }
   }
 
   &--addition {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      top: 67px;
+      margin-bottom: 0;
+    }
   }
 }
 
