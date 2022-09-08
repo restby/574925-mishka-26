@@ -33,15 +33,10 @@
 }
 
 .popular .container {
-  position: absolute;
-  top: -206px;
-  left: 0;
-  right: 0;
   width: 100%;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    top: -121px;
     width: 768px;
     padding: 0 50px;
   }
@@ -52,8 +47,25 @@
   }
 }
 
-.popular__list {
-  @include list-reset;
+.popular__item {
+  position: relative;
+  min-height: 103px;
+
+  &--interior {
+    background-color: $bg-color-alternetive;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    min-height: 119px;
+  }
+}
+
+.popular__inner {
   display: flex;
   flex-direction: column;
 
@@ -62,33 +74,21 @@
   }
 }
 
-.popular__item {
-  position: relative;
-  min-height: 103px;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-    min-height: 119px;
-  }
-}
-
 .popular__link {
   display: block;
   width: 100%;
   min-height: 103px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   text-decoration: none;
 
   &:focus {
     outline: none;
     min-height: 108px;
+    margin-top: -5px;
   }
 
   &:hover {
     min-height: 108px;
+    margin-top: -5px;
   }
 
   &:active {
@@ -150,6 +150,7 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 24px;
+  padding-bottom: 20px;
 
   &::after {
     position: absolute;

@@ -3,7 +3,7 @@
 
   &--index {
     padding-top: 72px;
-    min-height: 489px;
+    min-height: 283px;
     background-image: url("../../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% -17px;
@@ -15,9 +15,9 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/hero-tablet@1x.jpg");
-      background-position: 0 0;
-      padding-top: 153px;
-      min-height: 746px;
+      background-position: 0 -67px;
+      padding-top: 87px;
+      min-height: 561px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/hero-tablet@2x.jpg");
@@ -116,7 +116,7 @@
 .heading__title {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  padding-bottom: 20px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;

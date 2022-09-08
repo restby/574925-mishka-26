@@ -41,7 +41,8 @@
       width: 84px;
       margin: 0;
       padding: 0;
-      min-height: 89px;
+      min-height: auto;
+      height: 100%;
       border-left: 1px solid #ececec;
     }
   }
@@ -72,7 +73,7 @@
     @media (min-width: $tablet-width) {
       width: auto;
       padding-top: 33px;
-      padding-left: 24px;
+      padding-left: 75px;
       min-height: 89px;
       border-left: 1px solid #ececec;
     }
