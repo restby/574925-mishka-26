@@ -1,0 +1,4 @@
+Tablet index:
+1) Нужны паддинги для пунктов меню site-list, about__item,
+2) отступ с права для navigation__note,
+3)

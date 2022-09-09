@@ -1,5 +1,6 @@
 .popular {
   position: relative;
+  background-color: $bg-color;
 
   &::after {
     display: none;
