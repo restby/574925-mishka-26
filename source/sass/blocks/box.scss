@@ -1,0 +1,133 @@
+// .box__container {
+//   padding-top: 44px;
+//   display: flex;
+//   flex-direction: column;
+
+//   @media (min-width: $tablet-width) {
+//     padding: 0;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, auto);
+//     background-color: grey;
+//     font-size: 16px;
+//     line-height: 24px;
+//     font-weight: 700;
+//   }
+
+//   @media (min-width: $desktop-width) {}
+
+// }
+
+// .box__wrapper {
+//   min-height: 88px;
+
+//   &--user {
+//     width: 320px;
+//     margin: 0 auto;
+//     order: 2;
+//     background-color: #fff;
+
+//     @media (min-width: $tablet-width) {
+//       width: auto;
+//       margin: 0;
+//       grid-area: 1 / 1 / 2 / 3;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       grid-area: 1 / 2 / 2 / 3;
+//     }
+//   }
+
+//   &--site {
+//     width: 320px;
+//     margin: 0 auto;
+//     order: 1;
+
+//     @media (min-width: $tablet-width) {
+//       width: auto;
+//       margin: 0;
+//       grid-area: 2 / 1 / 3 / 2;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       grid-area: 1 / 1 / 2 / 2;
+//       background-color: #fff;
+//     }
+//   }
+
+//   &--note {
+//     display: none;
+
+//     @media (min-width: $tablet-width) {
+//       display: block;
+//       grid-area: 2 / 2 / 3 / 3;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       grid-area: 2 / 2 / 3 / 3;
+//     }
+//   }
+
+//   &--else {
+//     display: none;
+
+//     @media (min-width: $desktop-width) {
+//       display: block;
+//       grid-area: 2 / 1 / 3 / 2;
+//     }
+//   }
+// }
+
+// .box__item {
+//   display: block;
+//   min-height: 88px;
+
+//   &--user {
+//     background-color: red;
+
+//     @media (min-width: $tablet-width) {
+//       width: 348px;
+//       margin-left: auto;
+//       margin-right: 50px;
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+
+//     @media (min-width: $desktop-width) {}
+//   }
+
+//   &--site {
+//     background-color: red;
+
+//     @media (min-width: $tablet-width) {
+//       width: 334px;
+//       margin-left: 50px;
+//     }
+
+//     @media (min-width: $desktop-width) {
+//       width: 407px;
+//     }
+//   }
+
+//   &--note {
+//     background-color: red;
+
+//     @media (min-width: $tablet-width) {
+//       width: 334px;
+//       margin-left: auto;
+//       margin-right: 50px;
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+
+//     @media (min-width: $desktop-width) {}
+//   }
+
+//   &--else {
+//     background-color: red;
+
+//     @media (min-width: $desktop-width) {
+//       margin-left: 50px;
+//     }
+//   }
+// }

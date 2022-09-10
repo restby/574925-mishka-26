@@ -16,9 +16,9 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/hero-tablet@1x.jpg");
-      background-position: 0 -67px;
-      padding-top: 87px;
-      min-height: 561px;
+      background-position: 0 0;
+      padding-top: 154px;
+      min-height: 626px;
 
       @media (min-resolution: 2dppx) {
         background-size: cover;
