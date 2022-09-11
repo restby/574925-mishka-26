@@ -4,7 +4,10 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    box-shadow: 0 -1px 0 0 #ececec inset;
+    // box-shadow: 0 -1px 0 0 #ececec inset;
+    box-shadow: none;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -15,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    min-height: 46px;
+    min-height: auto;
     padding-left: 50px;
     padding-right: 50px;
     position: relative;
@@ -41,7 +44,7 @@
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 46px;
-    left: 50px;
+    left: 104px;
   }
 
   @media (min-width: $desktop-width) {

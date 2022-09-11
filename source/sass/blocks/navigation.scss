@@ -38,6 +38,10 @@
 .navigation__wrapper {
   min-height: 88px;
 
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+
   &--user {
     width: 320px;
     margin: 0 auto;
@@ -46,8 +50,10 @@
 
     @media (min-width: $tablet-width) {
       width: auto;
+      min-height: 88px;
       margin: 0;
       grid-area: 1 / 1 / 2 / 3;
+      border-bottom: 1px solid rgba($dark-color, 0.1);
     }
 
     @media (min-width: $desktop-width) {
@@ -64,6 +70,7 @@
     @media (min-width: $tablet-width) {
       width: auto;
       margin: 0;
+      min-height: auto;
       grid-area: 2 / 1 / 3 / 2;
       background-color: transparent;
     }
@@ -79,7 +86,10 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      min-height: auto;
       grid-area: 2 / 2 / 3 / 3;
+      padding-top: 20px;
+      padding-right: 2px;
     }
 
     @media (min-width: $desktop-width) {
@@ -118,8 +128,11 @@
     min-height: 88px;
 
     @media (min-width: $tablet-width) {
+      display: flex;
       width: 334px;
+      min-height: auto;
       margin-left: 50px;
+      padding-top: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -143,6 +156,7 @@
     display: flex;
     justify-content: flex-end;
     font-size: 15px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {}
@@ -154,6 +168,7 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
+    min-height: auto;
   }
 }
 
