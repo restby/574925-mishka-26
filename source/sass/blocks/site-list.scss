@@ -2,6 +2,11 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+
 }
 
 .site-list__link {
@@ -24,10 +29,21 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    min-height: 88px;
+    padding: 0;
     border-right: 1px solid #ececec;
   }
 
   &--catalog {
-    @media (min-width: $desktop-width) {}
+    @media (min-width: $desktop-width) {
+      padding-right: 35px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+      border-right: none;
+    }
   }
 }
