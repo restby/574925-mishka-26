@@ -2,10 +2,18 @@
   padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 64px;
+    padding-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 103px;
+  & .container {
+    background-color: $bg-color;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 103px;
+    }
   }
 }
