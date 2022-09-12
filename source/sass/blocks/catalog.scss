@@ -1,5 +1,6 @@
 .catalog {
   padding-bottom: 58px;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;

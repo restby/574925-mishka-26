@@ -3,10 +3,8 @@ let navigationButton = document.querySelector('.navigation__toggle');
 let navigationBtnIconOpen = navigationButton.querySelector('.navigation__toggle-icon--open');
 let navigationBtnIconClose = navigationButton.querySelector('.navigation__toggle-icon--close');
 
-console.log(navigationMenu);
-console.log(navigationButton);
-console.log(navigationBtnIconOpen);
-console.log(navigationBtnIconClose);
+navigationMenu.classList.remove('navigation__container--no-js');
+navigationButton.classList.remove('navigation__toggle--no-js');
 
 navigationButton.addEventListener('click', function (evt) {
   evt.preventDefault();

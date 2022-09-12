@@ -1,5 +1,5 @@
 .navigation {
-  width: 320px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
 
@@ -10,11 +10,25 @@
 }
 
 .navigation__container {
+  width: 100%;
   display: none;
   flex-direction: column;
   box-shadow: 0 1px 0 0 #ececec inset;
   position: absolute;
   z-index: 3;
+
+  &--open {
+    display: flex;
+  }
+
+  &--no-js {
+    display: flex;
+    position: static;
+  }
+
+  &--close {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -39,7 +53,7 @@
   }
 
   &--user {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     order: 2;
     background-color: $bg-color;
@@ -58,7 +72,7 @@
   }
 
   &--site {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     order: 1;
     background-color: $bg-color;
@@ -176,6 +190,10 @@
   background-color: transparent;
   z-index: 2;
 
+  &--no-js {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -221,10 +239,6 @@
   &--hide {
     display: none;
   }
-}
-
-.navigation__container--open {
-  display: flex;
 }
 
 .navigation__link {
