@@ -1,26 +1,16 @@
-//
-/*
-function getTextNodesIn(elem, opt_fnFilter) {
-  var textNodes = [];
-  if (elem) {
-    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
-      var node = nodes[i],
-        nodeType = node.nodeType;
-      if (nodeType == 3) {
-        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
-          if (node.data.trim() !== '') {
-            textNodes.push(node.data.trim() !== '' ? node : '');
+let navigationMenu = document.querySelector('.navigation__container');
+let navigationButton = document.querySelector('.navigation__toggle');
+let navigationBtnIconOpen = navigationButton.querySelector('.navigation__toggle-icon--open');
+let navigationBtnIconClose = navigationButton.querySelector('.navigation__toggle-icon--close');
 
-          }
-        }
-      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
-        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
-      }
-    }
-  }
-  return textNodes;
-}
+console.log(navigationMenu);
+console.log(navigationButton);
+console.log(navigationBtnIconOpen);
+console.log(navigationBtnIconClose);
 
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
-*/
-console.log('ghbdtn');
+navigationButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  navigationMenu.classList.toggle('navigation__container--open');
+  navigationBtnIconOpen.classList.toggle('navigation__toggle-icon--hide');
+  navigationBtnIconClose.classList.toggle('navigation__toggle-icon--hide');
+});

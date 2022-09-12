@@ -203,7 +203,6 @@
 }
 
 .order-form__container {
-
   &--type {
     @media (min-width: $tablet-width) {
       width: 499px;
@@ -293,8 +292,6 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
-
-    @media (min-width: $desktop-width) {}
   }
 }
 
@@ -357,17 +354,13 @@
       }
     }
 
-    &:hover {
-      &::before {
-        border: 2px solid #62d1ba;
-      }
+    &:hover::before {
+      border: 2px solid #62d1ba;
     }
 
     @media (min-width: $tablet-width) {
       min-height: 52px;
     }
-
-    @media (min-width: $desktop-width) {}
   }
 
   &--checkbox {
@@ -412,10 +405,8 @@
       }
     }
 
-    &:hover {
-      &::before {
-        border: 2px solid #62d1ba;
-      }
+    &:hover::before {
+      border: 2px solid #62d1ba;
     }
 
     @media (min-width: $tablet-width) {

@@ -15,7 +15,6 @@
 .user-list__link {
   position: relative;
   font-size: 17px;
-  display: block;
   min-height: 79px;
   display: flex;
   align-items: center;
@@ -25,7 +24,6 @@
   padding-right: 10px;
 
   &--search {
-
     & svg {
       position: absolute;
       top: 32px;
@@ -53,11 +51,6 @@
   }
 
   &--cart {
-
-    .user-list__link-text {
-      @media (min-width: $tablet-width) {}
-    }
-
     & svg {
       position: absolute;
       top: 31px;
