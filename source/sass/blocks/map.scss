@@ -1,4 +1,8 @@
 .map__wrapper {
   margin: 0 auto;
   width: 100%;
+
+  &--no-js {
+    display: none;
+  }
 }

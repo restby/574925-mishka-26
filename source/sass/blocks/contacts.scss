@@ -215,7 +215,8 @@
   margin: 0 auto;
   width: 100%;
 
-  &--show {
+  &--show,
+  &--no-js {
     display: block;
     height: 457px;
 
