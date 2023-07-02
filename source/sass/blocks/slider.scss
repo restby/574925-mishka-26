@@ -70,7 +70,7 @@
 
 .slider__btn--prev {
   &::before {
-    background-image: url("../../img/svg/arrow-left.svg");
+    background-image: url("../img/svg/arrow-left.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -82,6 +82,6 @@
   border-left: none;
 
   &::before {
-    background-image: url("../../img/svg/arrow-right.svg");
+    background-image: url("../img/svg/arrow-right.svg");
   }
 }

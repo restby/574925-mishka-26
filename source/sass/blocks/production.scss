@@ -36,7 +36,7 @@
     height: 22px;
     top: 12px;
     left: 34px;
-    background-image: url("../../img/svg/video.svg");
+    background-image: url("../img/svg/video.svg");
 
     @media (min-width: $tablet-width) {
       top: 0;
@@ -112,7 +112,7 @@
   top: 35px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../img/svg/play.svg");
+  background-image: url("../img/svg/play.svg");
 
   @media (min-width: $tablet-width) {
     top: 188px;
